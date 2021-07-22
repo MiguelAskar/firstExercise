@@ -1,0 +1,20 @@
+# Pods folder
+Pods/*
+
+## User settings
+xcuserdata/
+NatGeoPlay.xcworkspace/xcuserdata/
+
+.DS_Store
+
+*.mode1
+*.mode1v3
+*.mode2v3
+*.perspective
+*.perspectivev3
+*.pbxuser
+*.xcworkspace
+xcuserdata
+*.ipa
+
+*.zip
