@@ -1,3 +1,3 @@
-# iOS Academy july 2021
+# iOS Academy Miguel Askar
 
-This repository contains examples that demostrate base iOS principles
+This repository contains exercises developed by Miguel Askar
