@@ -1,13 +1,13 @@
 //
-//  ConactListViewController.swift
+//  ContactDetailViewController.swift
 //  Contacts
 //
-//  Created by Miguel Angel Askar Rodriguez on 22/07/21.
+//  Created by Miguel Angel Askar Rodriguez on 23/07/21.
 //
 
 import UIKit
 
-class ConactListViewController: UIViewController {
+class ContactDetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

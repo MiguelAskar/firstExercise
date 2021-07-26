@@ -8,7 +8,11 @@
 import UIKit
 
 class ContactTableViewCell: UITableViewCell {
-
+       
+    @IBOutlet weak var nameLabel: UILabel!
+        
+    @IBOutlet weak var lastNameLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -18,6 +22,11 @@ class ContactTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func configure(with contact: Contact){
+        nameLabel.text = contact.name
+        lastNameLabel.text = contact.lastName ?? "-"        
     }
 
 }
