@@ -15,6 +15,7 @@
 		5535515226AF6FE100057944 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5535515026AF6FE100057944 /* LaunchScreen.storyboard */; };
 		5535515D26AF6FE200057944 /* ConstraintsMiguelAskarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5535515C26AF6FE200057944 /* ConstraintsMiguelAskarTests.swift */; };
 		5535516826AF6FE200057944 /* ConstraintsMiguelAskarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5535516726AF6FE200057944 /* ConstraintsMiguelAskarUITests.swift */; };
+		5535517626AF786000057944 /* Challenge2StoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5535517526AF786000057944 /* Challenge2StoryBoard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		5535516326AF6FE200057944 /* ConstraintsMiguelAskarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConstraintsMiguelAskarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5535516726AF6FE200057944 /* ConstraintsMiguelAskarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintsMiguelAskarUITests.swift; sourceTree = "<group>"; };
 		5535516926AF6FE200057944 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5535517526AF786000057944 /* Challenge2StoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Challenge2StoryBoard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				5535514E26AF6FE100057944 /* Assets.xcassets */,
 				5535515026AF6FE100057944 /* LaunchScreen.storyboard */,
 				5535515326AF6FE100057944 /* Info.plist */,
+				5535517526AF786000057944 /* Challenge2StoryBoard.storyboard */,
 			);
 			path = ConstraintsMiguelAskar;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5535517626AF786000057944 /* Challenge2StoryBoard.storyboard in Resources */,
 				5535515226AF6FE100057944 /* LaunchScreen.storyboard in Resources */,
 				5535514F26AF6FE100057944 /* Assets.xcassets in Resources */,
 				5535514D26AF6FE000057944 /* Main.storyboard in Resources */,
