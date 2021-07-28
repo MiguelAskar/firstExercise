@@ -17,8 +17,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pj7-nn-2n8">
-                                <rect key="frame" x="103.5" y="39" width="207" height="828"/>
+                                <rect key="frame" x="103.5" y="246" width="207" height="414"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="pj7-nn-2n8" secondAttribute="height" multiplier="1:2" id="ffb-hc-KKx"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
@@ -29,6 +32,11 @@
                             <constraint firstItem="pj7-nn-2n8" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="TCH-Nk-T0d"/>
                             <constraint firstItem="pj7-nn-2n8" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="sZY-81-SfZ"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="09K-Pu-kPl"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
