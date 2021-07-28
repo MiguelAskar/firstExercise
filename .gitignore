@@ -14,7 +14,7 @@ NatGeoPlay.xcworkspace/xcuserdata/
 *.perspectivev3
 *.pbxuser
 *.xcworkspace
-xcuserdata
+*.xcuserdata
 *.ipa
-
+*.xcuserstate
 *.zip
