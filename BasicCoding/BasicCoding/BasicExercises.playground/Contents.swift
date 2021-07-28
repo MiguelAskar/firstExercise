@@ -2,7 +2,7 @@ import UIKit
 
 //Exercise 1:
 
-let distance: UInt = 41
+let distance: UInt = 15
 
 switch distance {
     case 0:
@@ -11,7 +11,7 @@ switch distance {
         print("Inmediate vicinity")
     case 5...15:
         print("Near")
-    case 15...40:
+    case 16...40:
         print("Kind of far")
     default:
         print("Far")
