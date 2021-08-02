@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="landscape" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,61 +13,69 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="rotation_exercise" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Agz-1t-dVz" userLabel="RedView">
-                                <rect key="frame" x="44" y="-21" width="448" height="414"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="448"/>
                                 <color key="backgroundColor" red="0.9893501401" green="0.39884093399999998" blue="0.2866594791" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eCs-3E-5Nb" userLabel="GreenView">
-                                <rect key="frame" x="448" y="0.0" width="404" height="393"/>
+                                <rect key="frame" x="0.0" y="448" width="414" height="448"/>
                                 <color key="backgroundColor" red="0.3709079623" green="0.815246582" blue="0.45845490690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Agz-1t-dVz" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.5" id="1L0-j2-aed"/>
-                            <constraint firstItem="eCs-3E-5Nb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="44" id="1n7-gN-rvf">
+                            <constraint firstItem="Agz-1t-dVz" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="1L0-j2-aed"/>
+                            <constraint firstItem="eCs-3E-5Nb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="44" id="1n7-gN-rvf">
                                 <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
                             </constraint>
                             <constraint firstItem="Agz-1t-dVz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="24Z-S2-upu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="leading" secondItem="Agz-1t-dVz" secondAttribute="leading" constant="44" id="5ZK-mk-nlL">
                                 <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
                             </constraint>
-                            <constraint firstItem="eCs-3E-5Nb" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="906-0V-VHp"/>
+                            <constraint firstItem="eCs-3E-5Nb" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="906-0V-VHp"/>
                             <constraint firstItem="Agz-1t-dVz" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.5" id="9WQ-go-koh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Agz-1t-dVz" secondAttribute="bottom" id="9zF-HG-zHp"/>
                             <constraint firstItem="Agz-1t-dVz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Gkl-3o-feg"/>
+                            <constraint firstItem="Agz-1t-dVz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="M4v-6T-pMr">
+                                <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
+                            </constraint>
                             <constraint firstItem="Agz-1t-dVz" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="1.04071" id="RWK-We-pTn"/>
-                            <constraint firstItem="Agz-1t-dVz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SM5-yg-ULV"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eCs-3E-5Nb" secondAttribute="bottom" constant="469" id="SvY-az-WeI">
+                            <constraint firstItem="Agz-1t-dVz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="SM5-yg-ULV"/>
+                            <constraint firstAttribute="bottom" secondItem="eCs-3E-5Nb" secondAttribute="bottom" constant="469" id="SvY-az-WeI">
                                 <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
                             </constraint>
                             <constraint firstItem="eCs-3E-5Nb" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="Tni-MB-MfM"/>
                             <constraint firstItem="eCs-3E-5Nb" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="W6M-Bs-uZI"/>
-                            <constraint firstItem="eCs-3E-5Nb" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.5" id="WCH-oL-PB8"/>
+                            <constraint firstItem="eCs-3E-5Nb" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="WCH-oL-PB8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="leading" secondItem="Agz-1t-dVz" secondAttribute="leading" constant="44" id="YEr-vH-0lC"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eCs-3E-5Nb" secondAttribute="trailing" constant="438" id="YYT-jC-7oi">
+                            <constraint firstAttribute="trailing" secondItem="eCs-3E-5Nb" secondAttribute="trailing" constant="438" id="YYT-jC-7oi">
+                                <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
+                            </constraint>
+                            <constraint firstAttribute="bottom" secondItem="Agz-1t-dVz" secondAttribute="bottom" id="bdl-9I-idH">
                                 <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
                             </constraint>
                             <constraint firstItem="Agz-1t-dVz" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="60" id="cfe-Vu-tVG">
                                 <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
                             </constraint>
                             <constraint firstItem="Agz-1t-dVz" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="fCV-dL-cYk"/>
-                            <constraint firstItem="eCs-3E-5Nb" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" id="kvm-d7-lvb"/>
+                            <constraint firstItem="eCs-3E-5Nb" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="kvm-d7-lvb"/>
                             <constraint firstItem="Agz-1t-dVz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="404" id="oeB-Fi-VMV">
                                 <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
                             </constraint>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Agz-1t-dVz" secondAttribute="bottom" id="pXV-5l-NPt"/>
-                            <constraint firstItem="Agz-1t-dVz" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="qXt-Ve-QDH"/>
-                            <constraint firstItem="eCs-3E-5Nb" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="469" id="rP7-ei-0Cq">
+                            <constraint firstItem="Agz-1t-dVz" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="qXt-Ve-QDH"/>
+                            <constraint firstItem="eCs-3E-5Nb" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" constant="469" id="rP7-ei-0Cq">
                                 <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
                             </constraint>
                             <constraint firstItem="Agz-1t-dVz" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="raZ-n5-dAa"/>
-                            <constraint firstItem="Agz-1t-dVz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="tFZ-3D-5vz"/>
-                            <constraint firstItem="eCs-3E-5Nb" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.5" id="uMy-Fb-2Ix"/>
+                            <constraint firstItem="Agz-1t-dVz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="tFZ-3D-5vz">
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="eCs-3E-5Nb" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="uMy-Fb-2Ix"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -76,11 +84,13 @@
                                 <exclude reference="SvY-az-WeI"/>
                                 <exclude reference="YEr-vH-0lC"/>
                                 <exclude reference="YYT-jC-7oi"/>
+                                <exclude reference="bdl-9I-idH"/>
                                 <exclude reference="pXV-5l-NPt"/>
                                 <exclude reference="1L0-j2-aed"/>
                                 <exclude reference="24Z-S2-upu"/>
                                 <exclude reference="9WQ-go-koh"/>
                                 <exclude reference="Gkl-3o-feg"/>
+                                <exclude reference="M4v-6T-pMr"/>
                                 <exclude reference="RWK-We-pTn"/>
                                 <exclude reference="SM5-yg-ULV"/>
                                 <exclude reference="cfe-Vu-tVG"/>
@@ -105,10 +115,12 @@
                                 <exclude reference="9zF-HG-zHp"/>
                                 <exclude reference="YEr-vH-0lC"/>
                                 <include reference="YYT-jC-7oi"/>
-                                <include reference="pXV-5l-NPt"/>
+                                <include reference="bdl-9I-idH"/>
+                                <exclude reference="pXV-5l-NPt"/>
                                 <exclude reference="24Z-S2-upu"/>
                                 <exclude reference="9WQ-go-koh"/>
-                                <include reference="Gkl-3o-feg"/>
+                                <exclude reference="Gkl-3o-feg"/>
+                                <include reference="M4v-6T-pMr"/>
                                 <exclude reference="RWK-We-pTn"/>
                                 <exclude reference="cfe-Vu-tVG"/>
                                 <include reference="fCV-dL-cYk"/>
