@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TedTalksListViewController: UIViewController {
+class TedTalkListViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -37,10 +37,19 @@ class TedTalksListViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func showTedTalkDetail(_ tedTalk: TedTalk) {
+        guard let viewController = storyboard?.instantiateViewController(identifier: "TedTalkDetailViewController") else { return }
+        guard let tedTalkDetailVC = viewController as? TedTalkDetailViewController else { return }
+        
+        tedTalkDetailVC.tedTalk = tedTalk
+        
+        navigationController?.pushViewController(tedTalkDetailVC, animated: true)
+    }
 
 }
 
-extension TedTalksListViewController: UITableViewDelegate, UITableViewDataSource {
+extension TedTalkListViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tedTalkManager.tedTalks.count
@@ -57,7 +66,9 @@ extension TedTalksListViewController: UITableViewDelegate, UITableViewDataSource
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        showTedTalkDetail(tedTalkManager.tedTalks[indexPath.row])
     }
+
     
     
 }
