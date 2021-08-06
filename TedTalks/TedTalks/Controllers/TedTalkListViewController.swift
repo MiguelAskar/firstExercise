@@ -8,8 +8,17 @@
 import UIKit
 
 class TedTalkListViewController: UIViewController {
+    
 
     @IBOutlet weak var tableView: UITableView!
+    
+    @IBOutlet weak var tedTalksSearchBar: UISearchBar!
+    
+    @IBOutlet weak var tedTalksFilterPickerView: UIPickerView!
+    
+    private var pickerData: [String] = ["All filters", "Event", "Main speaker", "Title", "Name", "Description"]
+    
+    private var selectedFilter = "All filters"
     
     private let tedTalkManager: TedTalkManager = TedTalkManager()
     
@@ -18,10 +27,12 @@ class TedTalkListViewController: UIViewController {
         title = "Selected Ted talks for you"
         tableView.delegate = self
         tableView.dataSource = self
-        
         tableView.rowHeight = UITableView.automaticDimension
+        tedTalksFilterPickerView.delegate = self
+        tedTalksFilterPickerView.dataSource = self
 
     }
+    
     
     func showTedTalkDetail(_ tedTalk: TedTalk) {
         guard let viewController = storyboard?.instantiateViewController(identifier: "TedTalkDetailViewController") else { return }
@@ -31,11 +42,12 @@ class TedTalkListViewController: UIViewController {
         
         navigationController?.pushViewController(tedTalkDetailVC, animated: true)
     }
-
+    
 }
 
-extension TedTalkListViewController: UITableViewDelegate, UITableViewDataSource {
+extension TedTalkListViewController: UITableViewDelegate, UITableViewDataSource, UIPickerViewDelegate, UIPickerViewDataSource, UISearchBarDelegate{
     
+    //**************Ted talk Table View
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tedTalkManager.tedTalks.count
     }
@@ -43,13 +55,38 @@ extension TedTalkListViewController: UITableViewDelegate, UITableViewDataSource 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TedTalkTableViewCell") as! TedTalkTableViewCell
         
-        cell.fill(with: tedTalkManager.tedTalks[indexPath.row])
+        cell.fill(with: tedTalkManager.filteredTedTalks[indexPath.row])
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         showTedTalkDetail(tedTalkManager.tedTalks[indexPath.row])
+    }
+    
+    //**************Ted talk Picker View
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerData.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return pickerData[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        self.selectedFilter = pickerData[row]
+        tedTalkManager.filter(keyword: tedTalksSearchBar.text ?? "", filter: self.selectedFilter)
+        //tableView.reloadData()
+    }
+    
+    //**************Search bar
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        tedTalkManager.filter(keyword: selectedFilter, filter: searchText)
+        //tableView.reloadData()
     }
     
 }

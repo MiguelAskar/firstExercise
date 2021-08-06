@@ -17,7 +17,7 @@ class TedTalkDetailViewController: UIViewController {
     @IBOutlet weak var talkWebView: WKWebView!
     @IBOutlet weak var viewsLabel: UILabel!
     @IBOutlet weak var uploadDateLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var descriptionTextView: UITextView!
     @IBOutlet weak var authorLabel: UILabel!
     @IBOutlet weak var conferenceDateLabel: UILabel!
     @IBOutlet weak var tagsLabel: UILabel!    
@@ -41,7 +41,7 @@ class TedTalkDetailViewController: UIViewController {
         talkWebView.load(request)
         viewsLabel.text = "\(tedTalk.views) views"
         uploadDateLabel.text = "Published in \(formatDate(from: tedTalk.published_date))"
-        descriptionLabel.text = "Description: \(tedTalk.description)"
+        descriptionTextView.text = "Description: \(tedTalk.description)"
         authorLabel.text = "Main speaker: \(tedTalk.mainSpeaker)"
         conferenceDateLabel.text = "Recorded in \(formatDate(from: tedTalk.filmDate))"
         tagsLabel.text = "Tags: \(tedTalk.tags.joined(separator: ", "))"
