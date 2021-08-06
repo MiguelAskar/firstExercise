@@ -20,7 +20,6 @@
 		555A546C26BB144600FB2A37 /* TedTalkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555A546B26BB144600FB2A37 /* TedTalkTableViewCell.swift */; };
 		555A546E26BB14C600FB2A37 /* TedTalkListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555A546D26BB14C600FB2A37 /* TedTalkListViewController.swift */; };
 		555A547126BC5A0700FB2A37 /* UIImageView+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555A547026BC5A0600FB2A37 /* UIImageView+URL.swift */; };
-		555A547326BC5A2400FB2A37 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555A547226BC5A2400FB2A37 /* ImageDownloader.swift */; };
 		555A547526BC914000FB2A37 /* ted.json in Resources */ = {isa = PBXBuildFile; fileRef = 555A547426BC914000FB2A37 /* ted.json */; };
 		555A547726BC936400FB2A37 /* TedTalkDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555A547626BC936400FB2A37 /* TedTalkDetailViewController.swift */; };
 /* End PBXBuildFile section */
@@ -62,7 +61,6 @@
 		555A546B26BB144600FB2A37 /* TedTalkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TedTalkTableViewCell.swift; sourceTree = "<group>"; };
 		555A546D26BB14C600FB2A37 /* TedTalkListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TedTalkListViewController.swift; sourceTree = "<group>"; };
 		555A547026BC5A0600FB2A37 /* UIImageView+URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+URL.swift"; sourceTree = "<group>"; };
-		555A547226BC5A2400FB2A37 /* ImageDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		555A547426BC914000FB2A37 /* ted.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ted.json; sourceTree = "<group>"; };
 		555A547626BC936400FB2A37 /* TedTalkDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TedTalkDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -176,7 +174,6 @@
 		555A546626BB122C00FB2A37 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				555A547226BC5A2400FB2A37 /* ImageDownloader.swift */,
 				555A546726BB123900FB2A37 /* Serialization.swift */,
 			);
 			path = Utils;
@@ -344,7 +341,6 @@
 				555A546526BB11C900FB2A37 /* TedTalkManager.swift in Sources */,
 				555A546E26BB14C600FB2A37 /* TedTalkListViewController.swift in Sources */,
 				555A547126BC5A0700FB2A37 /* UIImageView+URL.swift in Sources */,
-				555A547326BC5A2400FB2A37 /* ImageDownloader.swift in Sources */,
 				555A542E26B9D42F00FB2A37 /* AppDelegate.swift in Sources */,
 				555A546826BB123900FB2A37 /* Serialization.swift in Sources */,
 				555A547726BC936400FB2A37 /* TedTalkDetailViewController.swift in Sources */,

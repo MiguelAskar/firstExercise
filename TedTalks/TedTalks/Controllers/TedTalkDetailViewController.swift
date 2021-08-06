@@ -29,38 +29,38 @@ class TedTalkDetailViewController: UIViewController {
     
     @IBOutlet weak var tagsLabel: UILabel!
     
+    @IBOutlet weak var videoView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+       
         guard let tedTalk = tedTalk else {
             dismiss(animated: true, completion: nil)
             return
         }
         fill(with: tedTalk)
-        
-        
-
-        // Do any additional setup after loading the view.
     }
     
     func fill(with tedTalk: TedTalk) {
         
         titleLabel.text = tedTalk.title
-        
-        //talkWebView.text
-        
-        viewsLabel.text = "\(tedTalk.views)"
-        
-        uploadDateLabel.text = "\(tedTalk.published_date)"
-        
-        descriptionLabel.text = tedTalk.description
-        
-        authorLabel.text = tedTalk.mainSpeaker
-        
-        conferenceDateLabel.text = "\(tedTalk.filmDate)"
-        
-        tagsLabel.text = tedTalk.tags.joined(separator: ", ")
+        let tedTalkURL = tedTalk.url
+        let request = URLRequest(url: tedTalkURL)
+        talkWebView.load(request)
+        viewsLabel.text = "\(tedTalk.views) views"
+        uploadDateLabel.text = "Published in \(formatDate(from: tedTalk.published_date))"
+        descriptionLabel.text = "Description: \(tedTalk.description)"
+        authorLabel.text = "Main speaker: \(tedTalk.mainSpeaker)"
+        conferenceDateLabel.text = "Recorded in \(formatDate(from: tedTalk.filmDate))"
+        tagsLabel.text = "Tags: \(tedTalk.tags.joined(separator: ", "))"
+    }
+    
+    func formatDate(from date: UInt) -> String {
+        let timeInterval = Double(date)
+        let myDate = Date(timeIntervalSince1970: timeInterval)
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "LLLL-dd-yyyy"
+        return (dateFormatter.string(from: myDate))
     }
     
 
