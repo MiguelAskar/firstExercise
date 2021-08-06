@@ -23,7 +23,6 @@ class TedTalkListViewController: UIViewController {
 
     }
     
-    
     func showTedTalkDetail(_ tedTalk: TedTalk) {
         guard let viewController = storyboard?.instantiateViewController(identifier: "TedTalkDetailViewController") else { return }
         guard let tedTalkDetailVC = viewController as? TedTalkDetailViewController else { return }
@@ -52,7 +51,5 @@ extension TedTalkListViewController: UITableViewDelegate, UITableViewDataSource 
         tableView.deselectRow(at: indexPath, animated: true)
         showTedTalkDetail(tedTalkManager.tedTalks[indexPath.row])
     }
-
-    
     
 }

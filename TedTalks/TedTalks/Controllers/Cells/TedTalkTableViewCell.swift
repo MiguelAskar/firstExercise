@@ -11,13 +11,12 @@ class TedTalkTableViewCell: UITableViewCell {
 
     
     @IBOutlet weak var titleLabel: UILabel!
-    
-    @IBOutlet weak var descriptionLabel: UILabel!
-    
+    @IBOutlet weak var descriptionLabel: UILabel!    
     @IBOutlet weak var thumbnailmageView: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        contentMode = .scaleAspectFit
         // Initialization code
     }
 
@@ -30,6 +29,7 @@ class TedTalkTableViewCell: UITableViewCell {
     func fill(with tedTalk: TedTalk) {
         titleLabel.text = tedTalk.title
         descriptionLabel.text = tedTalk.description
+        thumbnailmageView.image = nil
         guard let thumbnailURL = tedTalk.thumbnail else { return }
         thumbnailmageView.downloaded(from: thumbnailURL)
     }

@@ -14,21 +14,13 @@ class TedTalkDetailViewController: UIViewController {
     var tedTalk: TedTalk?
     
     @IBOutlet weak var titleLabel: UILabel!
-    
     @IBOutlet weak var talkWebView: WKWebView!
-    
     @IBOutlet weak var viewsLabel: UILabel!
-    
     @IBOutlet weak var uploadDateLabel: UILabel!
-    
     @IBOutlet weak var descriptionLabel: UILabel!
-    
     @IBOutlet weak var authorLabel: UILabel!
-    
     @IBOutlet weak var conferenceDateLabel: UILabel!
-    
-    @IBOutlet weak var tagsLabel: UILabel!
-    
+    @IBOutlet weak var tagsLabel: UILabel!    
     @IBOutlet weak var videoView: UIView!
     
     override func viewDidLoad() {
@@ -60,10 +52,7 @@ class TedTalkDetailViewController: UIViewController {
         let myDate = Date(timeIntervalSince1970: timeInterval)
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "LLLL-dd-yyyy"
-        return (dateFormatter.string(from: myDate))
+        return dateFormatter.string(from: myDate)
     }
-    
-
-        
 
 }

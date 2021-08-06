@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		555A542E26B9D42F00FB2A37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555A542D26B9D42F00FB2A37 /* AppDelegate.swift */; };
 		555A543026B9D42F00FB2A37 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555A542F26B9D42F00FB2A37 /* SceneDelegate.swift */; };
-		555A543226B9D42F00FB2A37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555A543126B9D42F00FB2A37 /* ViewController.swift */; };
 		555A543526B9D42F00FB2A37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 555A543326B9D42F00FB2A37 /* Main.storyboard */; };
 		555A543726B9D43100FB2A37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 555A543626B9D43100FB2A37 /* Assets.xcassets */; };
 		555A544526B9D43200FB2A37 /* TedTalksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555A544426B9D43200FB2A37 /* TedTalksTests.swift */; };
@@ -45,7 +44,6 @@
 		555A542A26B9D42F00FB2A37 /* TedTalks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TedTalks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		555A542D26B9D42F00FB2A37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		555A542F26B9D42F00FB2A37 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		555A543126B9D42F00FB2A37 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		555A543426B9D42F00FB2A37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		555A543626B9D43100FB2A37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		555A543B26B9D43100FB2A37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -121,7 +119,6 @@
 				555A546026B9DCF700FB2A37 /* Models */,
 				555A542D26B9D42F00FB2A37 /* AppDelegate.swift */,
 				555A542F26B9D42F00FB2A37 /* SceneDelegate.swift */,
-				555A543126B9D42F00FB2A37 /* ViewController.swift */,
 				555A543326B9D42F00FB2A37 /* Main.storyboard */,
 				555A543626B9D43100FB2A37 /* Assets.xcassets */,
 				555A543B26B9D43100FB2A37 /* Info.plist */,
@@ -335,7 +332,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				555A543226B9D42F00FB2A37 /* ViewController.swift in Sources */,
 				555A546226B9DD0E00FB2A37 /* TedTalk.swift in Sources */,
 				555A546C26BB144600FB2A37 /* TedTalkTableViewCell.swift in Sources */,
 				555A546526BB11C900FB2A37 /* TedTalkManager.swift in Sources */,
