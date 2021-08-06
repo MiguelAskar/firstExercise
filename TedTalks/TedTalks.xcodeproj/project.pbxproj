@@ -1,0 +1,664 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		555A542E26B9D42F00FB2A37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555A542D26B9D42F00FB2A37 /* AppDelegate.swift */; };
+		555A543026B9D42F00FB2A37 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555A542F26B9D42F00FB2A37 /* SceneDelegate.swift */; };
+		555A543526B9D42F00FB2A37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 555A543326B9D42F00FB2A37 /* Main.storyboard */; };
+		555A543726B9D43100FB2A37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 555A543626B9D43100FB2A37 /* Assets.xcassets */; };
+		555A544526B9D43200FB2A37 /* TedTalksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555A544426B9D43200FB2A37 /* TedTalksTests.swift */; };
+		555A545026B9D43200FB2A37 /* TedTalksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555A544F26B9D43200FB2A37 /* TedTalksUITests.swift */; };
+		555A546226B9DD0E00FB2A37 /* TedTalk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555A546126B9DD0E00FB2A37 /* TedTalk.swift */; };
+		555A546526BB11C900FB2A37 /* TedTalkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555A546426BB11C900FB2A37 /* TedTalkManager.swift */; };
+		555A546826BB123900FB2A37 /* Serialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555A546726BB123900FB2A37 /* Serialization.swift */; };
+		555A546C26BB144600FB2A37 /* TedTalkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555A546B26BB144600FB2A37 /* TedTalkTableViewCell.swift */; };
+		555A546E26BB14C600FB2A37 /* TedTalkListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555A546D26BB14C600FB2A37 /* TedTalkListViewController.swift */; };
+		555A547126BC5A0700FB2A37 /* UIImageView+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555A547026BC5A0600FB2A37 /* UIImageView+URL.swift */; };
+		555A547526BC914000FB2A37 /* ted.json in Resources */ = {isa = PBXBuildFile; fileRef = 555A547426BC914000FB2A37 /* ted.json */; };
+		555A547726BC936400FB2A37 /* TedTalkDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555A547626BC936400FB2A37 /* TedTalkDetailViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		555A544126B9D43200FB2A37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 555A542226B9D42F00FB2A37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 555A542926B9D42F00FB2A37;
+			remoteInfo = TedTalks;
+		};
+		555A544C26B9D43200FB2A37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 555A542226B9D42F00FB2A37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 555A542926B9D42F00FB2A37;
+			remoteInfo = TedTalks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		555A542A26B9D42F00FB2A37 /* TedTalks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TedTalks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		555A542D26B9D42F00FB2A37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		555A542F26B9D42F00FB2A37 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		555A543426B9D42F00FB2A37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		555A543626B9D43100FB2A37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		555A543B26B9D43100FB2A37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		555A544026B9D43200FB2A37 /* TedTalksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TedTalksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		555A544426B9D43200FB2A37 /* TedTalksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TedTalksTests.swift; sourceTree = "<group>"; };
+		555A544626B9D43200FB2A37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		555A544B26B9D43200FB2A37 /* TedTalksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TedTalksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		555A544F26B9D43200FB2A37 /* TedTalksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TedTalksUITests.swift; sourceTree = "<group>"; };
+		555A545126B9D43200FB2A37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		555A546126B9DD0E00FB2A37 /* TedTalk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TedTalk.swift; sourceTree = "<group>"; };
+		555A546426BB11C900FB2A37 /* TedTalkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TedTalkManager.swift; sourceTree = "<group>"; };
+		555A546726BB123900FB2A37 /* Serialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Serialization.swift; sourceTree = "<group>"; };
+		555A546B26BB144600FB2A37 /* TedTalkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TedTalkTableViewCell.swift; sourceTree = "<group>"; };
+		555A546D26BB14C600FB2A37 /* TedTalkListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TedTalkListViewController.swift; sourceTree = "<group>"; };
+		555A547026BC5A0600FB2A37 /* UIImageView+URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+URL.swift"; sourceTree = "<group>"; };
+		555A547426BC914000FB2A37 /* ted.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ted.json; sourceTree = "<group>"; };
+		555A547626BC936400FB2A37 /* TedTalkDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TedTalkDetailViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		555A542726B9D42F00FB2A37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		555A543D26B9D43200FB2A37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		555A544826B9D43200FB2A37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		555A542126B9D42F00FB2A37 = {
+			isa = PBXGroup;
+			children = (
+				555A546F26BC59D700FB2A37 /* Extensions */,
+				555A546626BB122C00FB2A37 /* Utils */,
+				555A546326BB11AE00FB2A37 /* Managers */,
+				555A545D26B9DC0900FB2A37 /* Resources */,
+				555A542C26B9D42F00FB2A37 /* TedTalks */,
+				555A544326B9D43200FB2A37 /* TedTalksTests */,
+				555A544E26B9D43200FB2A37 /* TedTalksUITests */,
+				555A542B26B9D42F00FB2A37 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		555A542B26B9D42F00FB2A37 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				555A542A26B9D42F00FB2A37 /* TedTalks.app */,
+				555A544026B9D43200FB2A37 /* TedTalksTests.xctest */,
+				555A544B26B9D43200FB2A37 /* TedTalksUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		555A542C26B9D42F00FB2A37 /* TedTalks */ = {
+			isa = PBXGroup;
+			children = (
+				555A546926BB13E600FB2A37 /* Controllers */,
+				555A546026B9DCF700FB2A37 /* Models */,
+				555A542D26B9D42F00FB2A37 /* AppDelegate.swift */,
+				555A542F26B9D42F00FB2A37 /* SceneDelegate.swift */,
+				555A543326B9D42F00FB2A37 /* Main.storyboard */,
+				555A543626B9D43100FB2A37 /* Assets.xcassets */,
+				555A543B26B9D43100FB2A37 /* Info.plist */,
+			);
+			path = TedTalks;
+			sourceTree = "<group>";
+		};
+		555A544326B9D43200FB2A37 /* TedTalksTests */ = {
+			isa = PBXGroup;
+			children = (
+				555A544426B9D43200FB2A37 /* TedTalksTests.swift */,
+				555A544626B9D43200FB2A37 /* Info.plist */,
+			);
+			path = TedTalksTests;
+			sourceTree = "<group>";
+		};
+		555A544E26B9D43200FB2A37 /* TedTalksUITests */ = {
+			isa = PBXGroup;
+			children = (
+				555A544F26B9D43200FB2A37 /* TedTalksUITests.swift */,
+				555A545126B9D43200FB2A37 /* Info.plist */,
+			);
+			path = TedTalksUITests;
+			sourceTree = "<group>";
+		};
+		555A545D26B9DC0900FB2A37 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				555A547426BC914000FB2A37 /* ted.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		555A546026B9DCF700FB2A37 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				555A546126B9DD0E00FB2A37 /* TedTalk.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		555A546326BB11AE00FB2A37 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				555A546426BB11C900FB2A37 /* TedTalkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		555A546626BB122C00FB2A37 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				555A546726BB123900FB2A37 /* Serialization.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		555A546926BB13E600FB2A37 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				555A546A26BB141500FB2A37 /* Cells */,
+				555A546D26BB14C600FB2A37 /* TedTalkListViewController.swift */,
+				555A547626BC936400FB2A37 /* TedTalkDetailViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		555A546A26BB141500FB2A37 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				555A546B26BB144600FB2A37 /* TedTalkTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		555A546F26BC59D700FB2A37 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				555A547026BC5A0600FB2A37 /* UIImageView+URL.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		555A542926B9D42F00FB2A37 /* TedTalks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 555A545426B9D43200FB2A37 /* Build configuration list for PBXNativeTarget "TedTalks" */;
+			buildPhases = (
+				555A542626B9D42F00FB2A37 /* Sources */,
+				555A542726B9D42F00FB2A37 /* Frameworks */,
+				555A542826B9D42F00FB2A37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TedTalks;
+			productName = TedTalks;
+			productReference = 555A542A26B9D42F00FB2A37 /* TedTalks.app */;
+			productType = "com.apple.product-type.application";
+		};
+		555A543F26B9D43200FB2A37 /* TedTalksTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 555A545726B9D43200FB2A37 /* Build configuration list for PBXNativeTarget "TedTalksTests" */;
+			buildPhases = (
+				555A543C26B9D43200FB2A37 /* Sources */,
+				555A543D26B9D43200FB2A37 /* Frameworks */,
+				555A543E26B9D43200FB2A37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				555A544226B9D43200FB2A37 /* PBXTargetDependency */,
+			);
+			name = TedTalksTests;
+			productName = TedTalksTests;
+			productReference = 555A544026B9D43200FB2A37 /* TedTalksTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		555A544A26B9D43200FB2A37 /* TedTalksUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 555A545A26B9D43200FB2A37 /* Build configuration list for PBXNativeTarget "TedTalksUITests" */;
+			buildPhases = (
+				555A544726B9D43200FB2A37 /* Sources */,
+				555A544826B9D43200FB2A37 /* Frameworks */,
+				555A544926B9D43200FB2A37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				555A544D26B9D43200FB2A37 /* PBXTargetDependency */,
+			);
+			name = TedTalksUITests;
+			productName = TedTalksUITests;
+			productReference = 555A544B26B9D43200FB2A37 /* TedTalksUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		555A542226B9D42F00FB2A37 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					555A542926B9D42F00FB2A37 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					555A543F26B9D43200FB2A37 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 555A542926B9D42F00FB2A37;
+					};
+					555A544A26B9D43200FB2A37 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 555A542926B9D42F00FB2A37;
+					};
+				};
+			};
+			buildConfigurationList = 555A542526B9D42F00FB2A37 /* Build configuration list for PBXProject "TedTalks" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 555A542126B9D42F00FB2A37;
+			productRefGroup = 555A542B26B9D42F00FB2A37 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				555A542926B9D42F00FB2A37 /* TedTalks */,
+				555A543F26B9D43200FB2A37 /* TedTalksTests */,
+				555A544A26B9D43200FB2A37 /* TedTalksUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		555A542826B9D42F00FB2A37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				555A543726B9D43100FB2A37 /* Assets.xcassets in Resources */,
+				555A543526B9D42F00FB2A37 /* Main.storyboard in Resources */,
+				555A547526BC914000FB2A37 /* ted.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		555A543E26B9D43200FB2A37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		555A544926B9D43200FB2A37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		555A542626B9D42F00FB2A37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				555A546226B9DD0E00FB2A37 /* TedTalk.swift in Sources */,
+				555A546C26BB144600FB2A37 /* TedTalkTableViewCell.swift in Sources */,
+				555A546526BB11C900FB2A37 /* TedTalkManager.swift in Sources */,
+				555A546E26BB14C600FB2A37 /* TedTalkListViewController.swift in Sources */,
+				555A547126BC5A0700FB2A37 /* UIImageView+URL.swift in Sources */,
+				555A542E26B9D42F00FB2A37 /* AppDelegate.swift in Sources */,
+				555A546826BB123900FB2A37 /* Serialization.swift in Sources */,
+				555A547726BC936400FB2A37 /* TedTalkDetailViewController.swift in Sources */,
+				555A543026B9D42F00FB2A37 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		555A543C26B9D43200FB2A37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				555A544526B9D43200FB2A37 /* TedTalksTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		555A544726B9D43200FB2A37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				555A545026B9D43200FB2A37 /* TedTalksUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		555A544226B9D43200FB2A37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 555A542926B9D42F00FB2A37 /* TedTalks */;
+			targetProxy = 555A544126B9D43200FB2A37 /* PBXContainerItemProxy */;
+		};
+		555A544D26B9D43200FB2A37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 555A542926B9D42F00FB2A37 /* TedTalks */;
+			targetProxy = 555A544C26B9D43200FB2A37 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		555A543326B9D42F00FB2A37 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				555A543426B9D42F00FB2A37 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		555A545226B9D43200FB2A37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		555A545326B9D43200FB2A37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		555A545526B9D43200FB2A37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TedTalks/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.globant.TedTalks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		555A545626B9D43200FB2A37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TedTalks/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.globant.TedTalks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		555A545826B9D43200FB2A37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TedTalksTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.globant.TedTalksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TedTalks.app/TedTalks";
+			};
+			name = Debug;
+		};
+		555A545926B9D43200FB2A37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TedTalksTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.globant.TedTalksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TedTalks.app/TedTalks";
+			};
+			name = Release;
+		};
+		555A545B26B9D43200FB2A37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TedTalksUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.globant.TedTalksUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TedTalks;
+			};
+			name = Debug;
+		};
+		555A545C26B9D43200FB2A37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TedTalksUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.globant.TedTalksUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TedTalks;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		555A542526B9D42F00FB2A37 /* Build configuration list for PBXProject "TedTalks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				555A545226B9D43200FB2A37 /* Debug */,
+				555A545326B9D43200FB2A37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		555A545426B9D43200FB2A37 /* Build configuration list for PBXNativeTarget "TedTalks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				555A545526B9D43200FB2A37 /* Debug */,
+				555A545626B9D43200FB2A37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		555A545726B9D43200FB2A37 /* Build configuration list for PBXNativeTarget "TedTalksTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				555A545826B9D43200FB2A37 /* Debug */,
+				555A545926B9D43200FB2A37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		555A545A26B9D43200FB2A37 /* Build configuration list for PBXNativeTarget "TedTalksUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				555A545B26B9D43200FB2A37 /* Debug */,
+				555A545C26B9D43200FB2A37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 555A542226B9D42F00FB2A37 /* Project object */;
+}
