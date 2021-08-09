@@ -15,7 +15,7 @@ enum TedTalkFilters : String {
     case name = "Name"
     case description = "Description"
     
-    func getFilter() -> String {
+    func getName() -> String {
         return self.rawValue
     }
 }

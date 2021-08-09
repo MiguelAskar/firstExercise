@@ -9,7 +9,7 @@ import Foundation
 
 class TedTalkManager {
     
-    private(set) var tedTalks: [TedTalk] = []
+    private var tedTalks: [TedTalk] = []
     private(set) var filteredTedTalks: [TedTalk] = []
     
     init() {

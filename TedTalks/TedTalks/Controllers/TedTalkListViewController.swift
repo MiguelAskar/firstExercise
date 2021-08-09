@@ -61,7 +61,7 @@ extension TedTalkListViewController: UITableViewDelegate, UITableViewDataSource,
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        showTedTalkDetail(tedTalkManager.tedTalks[indexPath.row])
+        showTedTalkDetail(tedTalkManager.filteredTedTalks[indexPath.row])
     }
     
     //**************Ted talk Picker View
@@ -74,7 +74,7 @@ extension TedTalkListViewController: UITableViewDelegate, UITableViewDataSource,
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return pickerData[row].getFilter()
+        return pickerData[row].getName()
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
