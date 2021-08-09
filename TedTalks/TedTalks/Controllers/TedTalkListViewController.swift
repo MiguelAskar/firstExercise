@@ -16,9 +16,9 @@ class TedTalkListViewController: UIViewController {
     
     @IBOutlet weak var tedTalksFilterPickerView: UIPickerView!
     
-    private var pickerData: [String] = ["All filters", "Event", "Main speaker", "Title", "Name", "Description"]
+    private var pickerData: [TedTalkFilters] = [.allFilters, .event, .mainSpeaker, .title, .name, .description]
     
-    private var selectedFilter = "All filters"
+    private var selectedFilter = TedTalkFilters.allFilters
     
     private let tedTalkManager: TedTalkManager = TedTalkManager()
     
@@ -30,7 +30,7 @@ class TedTalkListViewController: UIViewController {
         tableView.rowHeight = UITableView.automaticDimension
         tedTalksFilterPickerView.delegate = self
         tedTalksFilterPickerView.dataSource = self
-
+        tedTalksSearchBar.delegate = self
     }
     
     
@@ -49,7 +49,7 @@ extension TedTalkListViewController: UITableViewDelegate, UITableViewDataSource,
     
     //**************Ted talk Table View
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tedTalkManager.tedTalks.count
+        return tedTalkManager.filteredTedTalks.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -74,19 +74,20 @@ extension TedTalkListViewController: UITableViewDelegate, UITableViewDataSource,
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return pickerData[row]
+        return pickerData[row].getFilter()
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         self.selectedFilter = pickerData[row]
         tedTalkManager.filter(keyword: tedTalksSearchBar.text ?? "", filter: self.selectedFilter)
-        //tableView.reloadData()
+        tableView.reloadData()
     }
     
     //**************Search bar
+    
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        tedTalkManager.filter(keyword: selectedFilter, filter: searchText)
-        //tableView.reloadData()
+        tedTalkManager.filter(keyword: searchText, filter: selectedFilter)
+        tableView.reloadData()
     }
     
 }
